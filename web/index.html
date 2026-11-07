@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>wgpu WebGL depth textureLoad repro</title>
+    <style>
+        canvas {
+            width: 256px;
+            height: 128px;
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="256" height="128"></canvas>
+    <p>Left: <code>textureLoad</code>. Right: NEAREST sampler.</p>
+    <p>Green: read the written depth. Red: didn't.</p>
+    <script type="module">
+        import init from './pkg/wgpu_webgl_depth_repro.js';
+        init();
+    </script>
+</body>
+
+</html>
