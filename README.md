@@ -1,5 +1,7 @@
 # [gles] textureLoad from a depth texture returns 0 on WebGL2
 
+https://github.com/gfx-rs/wgpu/issues/10878
+
 ## Description
 
 On WebGL2, `textureLoad`ing a `Depth32Float` bound as an unfilterable `texture_2d<f32>` always returns **0** (no validation errors). 
